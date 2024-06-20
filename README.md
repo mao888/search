@@ -40,21 +40,26 @@
 
   > node > 16.16.0  
   > npm > 8.15.0
-
+  ```shell
+  nvm install 20
+  ```
 - 然后以 **管理员权限** 运行 `cmd` 终端，并 `cd` 到 项目根目录
 - 在 `终端` 中输入：
 
-  ```bash
-  # 安装 pnpm
+  安装 pnpm
+  ```shell
   npm install -g pnpm
-
-  # 安装依赖
+  ```
+  安装依赖
+  ```shell
   pnpm install
-
-  # 开发
+  ```
+  开发
+  ```shell
   pnpm dev
-
-  # 构建
+  ```
+  构建
+  ```shell
   pnpm build
   ```
 
