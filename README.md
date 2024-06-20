@@ -1,5 +1,5 @@
 <p>
-<strong><h2>Snavigation</h2></strong>
+<strong><h2>Search</h2></strong>
 一个简约的起始页
 </p>
 
