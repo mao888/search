@@ -5,14 +5,11 @@
 
 ![Snavigation.png](https://mao888.github.io/picx-images-hosting/search/image.7zqaik5j9n.webp)
 
-> 重构中，尚未完成
-
 ### Demo
 
 > 由于 `CDN` 缓存原因，查看最新效果可能需要 `Ctrl` + `F5` 强制刷新浏览器缓存
 
-- [Snavigation](https://nav.imsyy.top)
-- [Snavigation Dev](https://snavigation-git-dev-imsyy.vercel.app/)
+- [Snavigation](https://search.huchao.vip)
 
 ### 功能
 
