@@ -8,7 +8,6 @@
 ### Demo
 
 > 由于 `CDN` 缓存原因，查看最新效果可能需要 `Ctrl` + `F5` 强制刷新浏览器缓存
-
 - [Snavigation](https://search.huchao.vip)
 
 ### 功能
