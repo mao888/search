@@ -14,24 +14,22 @@ jobs:
     strategy:
       matrix:
         node-version: [18.x, 20.x]
-        # 查看支持的 Node.js 版本：https://nodejs.org/en/about/releases/
 
     steps:
-      # 检出 Git 仓库
       - name: Check out git repository
         uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          clean: true  # 确保清理工作区
 
-      # 设置 Node.js
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
 
-      # 安装 pnpm
       - name: Install pnpm
         run: npm install -g pnpm
 
-      # 缓存 pnpm 缓存和 node_modules
       - name: Cache pnpm cache and node_modules
         uses: actions/cache@v4
         with:
@@ -42,23 +40,20 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-cache-
 
-      # 安装项目依赖
       - name: Install dependencies
         run: pnpm install
 
-      # 构建项目
       - name: Build project
         run: pnpm run build
 
-      # 创建 CNAME 文件
       - name: Create CNAME file
         run: echo "home.huchao.vip" > ./dist/CNAME
 
-      # 部署到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./dist
-          # 强制推送
           force_orphan: true
+        env:
+          ACTIONS_RUNNER_DEBUG: true
