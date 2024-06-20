@@ -61,4 +61,4 @@ jobs:
           github_token: ${{ secrets.ACCESS_TOKEN }}
           publish_dir: ./dist
           # 强制推送
-          # force_orphan: true
+          force_orphan: true
