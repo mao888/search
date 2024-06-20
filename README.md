@@ -1,6 +1,6 @@
 <p>
 <strong><h2>Search</h2></strong>
-一个简约的起始页
+一个简约的搜索页
 </p>
 
 ![search.png](https://mao888.github.io/picx-images-hosting/search/image.7zqaik5j9n.webp)
