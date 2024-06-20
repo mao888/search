@@ -17,9 +17,11 @@ jobs:
         # 查看支持的 Node.js 版本：https://nodejs.org/en/about/releases/
 
     steps:
-      # 检出 Git 仓库
+      # 检出 Git 仓库并清理工作区
       - name: Check out git repository
         uses: actions/checkout@v4
+        with:
+          clean: true
 
       # 设置 Node.js
       - name: Set up Node.js
